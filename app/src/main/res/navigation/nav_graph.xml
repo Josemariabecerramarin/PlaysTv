@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/pantallaInicio">
+
+    <fragment
+        android:id="@+id/pantallaInicio"
+        android:name="com.example.playstv.pantallaInicio"
+        android:label="fragment_pantalla_inicio"
+        tools:layout="@layout/fragment_pantalla_inicio" >
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/registrarseFragment"
+        android:name="com.example.playstv.registrarseFragment"
+        android:label="fragment_registrarse"
+        tools:layout="@layout/fragment_registrarse" />
+    <fragment
+        android:id="@+id/Inicio_SesionFragment"
+        android:name="com.example.playstv.InicioSesionFragment"
+        android:label="fragment_rata"
+        tools:layout="@layout/fragment_inicio_sesion" />
+    <fragment
+        android:id="@+id/menuPrincipalFragment"
+        android:name="com.example.playstv.MenuPrincipalFragment"
+        android:label="fragment_menu_principal"
+        tools:layout="@layout/fragment_menu_principal" />
+    <action
+        android:id="@+id/action_Inicio_SesionFragment"
+        app:destination="@id/Inicio_SesionFragment"/>
+    <action
+        android:id="@+id/action_registrarseFragment"
+        app:destination="@id/registrarseFragment" />
+    <action
+        android:id="@+id/action_menuPrincipalFragment"
+        app:destination="@id/menuPrincipalFragment" />
+
+
+</navigation>
