@@ -103,12 +103,12 @@
             android:src="@drawable/suscribirse2"
             android:layout_gravity=""/>
 
-        <!--<ImageButton
+        <ImageButton
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#00FFFFFF"
-            android:src="@drawable/corazon"/>-->
+            android:src="@drawable/corazon"/>
 
         <ImageButton
             android:id="@+id/imageButton6"
