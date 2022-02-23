@@ -49,6 +49,32 @@
     <action
         android:id="@+id/action_menuSuscripcionesFragment"
         app:destination="@id/menuSuscripcionesFragment" />
+    <fragment
+        android:id="@+id/menuPerfilFragment"
+        android:name="com.example.playstv.MenuPerfilFragment"
+        android:label="fragment_menu_perfil"
+        tools:layout="@layout/fragment_menu_perfil" >
+        <action
+            android:id="@+id/action_menuPerfilFragment_to_menuSuscripcionesFragment"
+            app:destination="@id/menuSuscripcionesFragment" />
+        <action
+            android:id="@+id/action_menuPerfilFragment_to_menuCamaraFragment"
+            app:destination="@id/menuCamaraFragment" />
+    </fragment>
+    <action
+        android:id="@+id/action_menuPerfilFragment"
+        app:destination="@id/menuPerfilFragment" />
+    <fragment
+        android:id="@+id/menuCamaraFragment"
+        android:name="com.example.playstv.MenuCamaraFragment"
+        android:label="fragment_menu_camara"
+        tools:layout="@layout/fragment_menu_camara" />
+    <action
+        android:id="@+id/action_menuCamaraFragment"
+        app:destination="@id/menuCamaraFragment" />
+    <action
+        android:id="@+id/action_menuPrincipalFragment2"
+        app:destination="@id/menuPrincipalFragment" />
 
 
 </navigation>
