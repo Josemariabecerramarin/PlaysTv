@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 
 public class MenuPerfilFragment extends Fragment {
@@ -19,6 +20,12 @@ public class MenuPerfilFragment extends Fragment {
     ImageButton buttonVolver;
     ImageButton buttonSuscripciones;
     ImageButton buttonCamara;
+    LinearLayout perfil;
+    LinearLayout apodo;
+    LinearLayout cambiarKey;
+    LinearLayout cuenta;
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,6 +42,11 @@ public class MenuPerfilFragment extends Fragment {
         buttonVolver = view.findViewById(R.id.logoVolver);
         buttonSuscripciones = view.findViewById(R.id.botonSuscripciones);
         buttonCamara = view.findViewById(R.id.botonCamara);
+        perfil = view.findViewById(R.id.imageButton3);
+        apodo = view.findViewById(R.id.imageButton4);
+        cambiarKey = view.findViewById(R.id.imageButton7);
+        cuenta = view.findViewById(R.id.imageButton8);
+
 
 
         buttonVolver.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +67,34 @@ public class MenuPerfilFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.action_menuPerfilFragment_to_menuCamaraFragment);
+            }
+        });
+
+        perfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_cambiarImagenPerfilFragment);
+            }
+        });
+
+        apodo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_cambiarApodoFragment);
+            }
+        });
+
+        cambiarKey.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_cambiarKeyFragment);
+            }
+        });
+
+        cuenta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_cuenta);
             }
         });
     }

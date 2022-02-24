@@ -60,6 +60,7 @@
         <action
             android:id="@+id/action_menuPerfilFragment_to_menuCamaraFragment"
             app:destination="@id/menuCamaraFragment" />
+
     </fragment>
     <action
         android:id="@+id/action_menuPerfilFragment"
@@ -75,6 +76,36 @@
     <action
         android:id="@+id/action_menuPrincipalFragment2"
         app:destination="@id/menuPrincipalFragment" />
-
-
+    <fragment
+        android:id="@+id/cambiarImagenPerfilFragment"
+        android:name="com.example.playstv.CambiarImagenPerfilFragment"
+        android:label="fragment_cambiar_imagen_perfil"
+        tools:layout="@layout/fragment_cambiar_imagen_perfil" />
+    <action
+        android:id="@+id/action_cambiarImagenPerfilFragment"
+        app:destination="@id/cambiarImagenPerfilFragment" />
+    <fragment
+        android:id="@+id/cambiarApodoFragment"
+        android:name="com.example.playstv.cambiarApodoFragment"
+        android:label="fragment_cambiar_apodo"
+        tools:layout="@layout/fragment_cambiar_apodo" />
+    <action
+        android:id="@+id/action_cambiarApodoFragment"
+        app:destination="@id/cambiarApodoFragment" />
+    <fragment
+        android:id="@+id/cambiarKeyFragment"
+        android:name="com.example.playstv.cambiarKeyFragment"
+        android:label="fragment_cambiar_key"
+        tools:layout="@layout/fragment_cambiar_key" />
+    <action
+        android:id="@+id/action_cambiarKeyFragment"
+        app:destination="@id/cambiarKeyFragment" />
+    <fragment
+        android:id="@+id/cuentaFragment"
+        android:name="com.example.playstv.cuentaFragment"
+        android:label="fragment_cuenta"
+        tools:layout="@layout/fragment_cuenta" />
+    <action
+        android:id="@+id/action_cuenta"
+        app:destination="@id/cuentaFragment"/>
 </navigation>
