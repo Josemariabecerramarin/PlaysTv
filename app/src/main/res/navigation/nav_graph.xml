@@ -117,4 +117,36 @@
     <action
         android:id="@+id/action_menuPerfilFragment"
         app:destination="@id/menuPerfilFragment" />
+    <fragment
+        android:id="@+id/menuAjustesFragment"
+        android:name="com.example.playstv.menuAjustesFragment"
+        android:label="fragment_menu_ajustes"
+        tools:layout="@layout/fragment_menu_ajustes" />
+    <action
+        android:id="@+id/action_AjustesFragment"
+        app:destination="@id/menuAjustesFragment"/>
+    <fragment
+        android:id="@+id/canalFragment"
+        android:name="com.example.playstv.CanalFragment"
+        android:label="fragment_canal"
+        tools:layout="@layout/fragment_canal" />
+    <action
+        android:id="@+id/action_CanalFragment"
+        app:destination="@id/canalFragment"/>
+    <fragment
+        android:id="@+id/buzonSugerenciasFragment"
+        android:name="com.example.playstv.BuzonSugerenciasFragment"
+        android:label="fragment_buzon_sugerencias"
+        tools:layout="@layout/fragment_buzon_sugerencias" />
+    <action
+        android:id="@+id/action_BuzonSugerenciasFragment"
+        app:destination="@id/buzonSugerenciasFragment"/>
+    <fragment
+        android:id="@+id/ayudaConsejosFragment"
+        android:name="com.example.playstv.AyudaConsejosFragment"
+        android:label="fragment_ayuda_consejos"
+        tools:layout="@layout/fragment_ayuda_consejos" />
+    <action
+        android:id="@+id/action_AyudaConsejosFragment"
+        app:destination="@id/ayudaConsejosFragment"/>
 </navigation>

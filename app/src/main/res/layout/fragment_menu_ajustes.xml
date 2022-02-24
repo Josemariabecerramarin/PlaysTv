@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menuAjustesFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="#011900"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/botonFlecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:src="@drawable/flecha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/logoVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/logo2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@id/botonHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="-60dp"
+            android:backgroundTint="#FFFFFF"
+            android:orientation="vertical"
+            android:translationY="130dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logoVolver">
+
+            <ImageButton
+                android:id="@+id/botonHistorial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/historial" />
+
+            <TextView
+                android:id="@+id/textViewHistorial"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Mostrar historial"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:translationX="75dp"
+                android:translationY="-39dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/botonControlParental"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="-50dp"
+            android:orientation="vertical"
+            android:translationY="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/botonHistorial">
+
+            <ImageButton
+                android:id="@+id/botonControlParental"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/controlparental" />
+
+            <TextView
+                android:id="@+id/textViewControlParental"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Control parental"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:translationX="75dp"
+                android:translationY="-39dp" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:translationX="300dp"
+                android:translationY="-70dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/botonIdioma"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="-40dp"
+            android:orientation="vertical"
+            android:translationY="260dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/botonControlParental">
+
+            <ImageButton
+                android:id="@+id/botonIdioma"
+                android:layout_width="63dp"
+                android:layout_height="match_parent"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/idioma" />
+
+            <TextView
+                android:id="@+id/textViewIdioma"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Cambiar idioma"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:translationX="75dp"
+                android:translationY="-39dp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

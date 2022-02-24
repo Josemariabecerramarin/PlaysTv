@@ -7,15 +7,12 @@
     tools:context=".registrarseFragment">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#011900"
         app:circularflow_angles="100"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        />
 
     <ImageView
         android:id="@+id/imageView"
@@ -23,10 +20,10 @@
         android:layout_height="190dp"
         android:layout_marginTop="55dp"
         android:src="@drawable/logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/introduce_correo"/>
 
     <EditText
         android:id="@+id/introduce_correo"
@@ -41,9 +38,10 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#73FFFFFF"
         app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/introduce_usuario"/>
 
     <EditText
         android:id="@+id/introduce_usuario"
@@ -58,9 +56,10 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#73FFFFFF"
         app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/introduce_correo" />
+        app:layout_constraintTop_toBottomOf="@id/introduce_correo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/introduce_contraseña"/>
 
     <EditText
         android:id="@+id/introduce_contraseña"
@@ -75,9 +74,10 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#73FFFFFF"
         app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/introduce_usuario" />
+        app:layout_constraintTop_toBottomOf="@id/introduce_usuario"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/repetir_contraseña"/>
 
     <EditText
         android:id="@+id/repetir_contraseña"
@@ -92,21 +92,23 @@
         android:textColor="#FFFFFF"
         android:textColorHint="#73FFFFFF"
         app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/introduce_contraseña" />
+        app:layout_constraintTop_toBottomOf="@id/introduce_contraseña"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonRegistrado"/>
 
     <Button
         android:id="@+id/buttonRegistrado"
         android:layout_width="160dp"
         android:layout_height="60dp"
         android:layout_marginTop="40dp"
+        android:layout_marginBottom="80dp"
         android:backgroundTint="#41AB00"
         android:text="Registrarse"
         app:cornerRadius="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/repetir_contraseña" />
+        app:layout_constraintTop_toBottomOf="@id/repetir_contraseña"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

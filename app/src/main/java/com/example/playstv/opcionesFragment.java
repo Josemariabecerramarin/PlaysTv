@@ -74,5 +74,19 @@ public class opcionesFragment extends Fragment {
                 navController.navigate(R.id.action_menuPerfilFragment);
             }
         });
+
+        ajustes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_AjustesFragment);
+            }
+        });
+
+        canal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_CanalFragment);
+            }
+        });
     }
 }
