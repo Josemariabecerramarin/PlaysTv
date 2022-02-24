@@ -57,7 +57,7 @@ public class MenuPrincipalFragment<ibLis> extends Fragment {
         buttonPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            navController.navigate(R.id.action_menuPerfilFragment);
+            navController.navigate(R.id.action_opcionesFragment);
             }
         });
 

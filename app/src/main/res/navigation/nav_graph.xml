@@ -31,6 +31,7 @@
         android:label="fragment_menu_principal"
         tools:layout="@layout/fragment_menu_principal" >
 
+
     </fragment>
     <action
         android:id="@+id/action_Inicio_SesionFragment"
@@ -54,17 +55,12 @@
         android:name="com.example.playstv.MenuPerfilFragment"
         android:label="fragment_menu_perfil"
         tools:layout="@layout/fragment_menu_perfil" >
-        <action
-            android:id="@+id/action_menuPerfilFragment_to_menuSuscripcionesFragment"
-            app:destination="@id/menuSuscripcionesFragment" />
-        <action
-            android:id="@+id/action_menuPerfilFragment_to_menuCamaraFragment"
-            app:destination="@id/menuCamaraFragment" />
 
+        <action
+            android:id="@+id/action_menuPerfilFragment_to_pantallaInicio"
+            app:destination="@id/pantallaInicio" />
     </fragment>
-    <action
-        android:id="@+id/action_menuPerfilFragment"
-        app:destination="@id/menuPerfilFragment" />
+
     <fragment
         android:id="@+id/menuCamaraFragment"
         android:name="com.example.playstv.MenuCamaraFragment"
@@ -108,4 +104,17 @@
     <action
         android:id="@+id/action_cuenta"
         app:destination="@id/cuentaFragment"/>
+    <fragment
+        android:id="@+id/opcionesFragment"
+        android:name="com.example.playstv.opcionesFragment"
+        android:label="fragment_opciones"
+        tools:layout="@layout/fragment_opciones" >
+
+    </fragment>
+    <action
+        android:id="@+id/action_opcionesFragment"
+        app:destination="@id/opcionesFragment" />
+    <action
+        android:id="@+id/action_menuPerfilFragment"
+        app:destination="@id/menuPerfilFragment" />
 </navigation>

@@ -24,6 +24,8 @@ public class MenuPerfilFragment extends Fragment {
     LinearLayout apodo;
     LinearLayout cambiarKey;
     LinearLayout cuenta;
+    LinearLayout salir;
+    ImageButton volverPerfil;
 
 
 
@@ -46,6 +48,8 @@ public class MenuPerfilFragment extends Fragment {
         apodo = view.findViewById(R.id.imageButton4);
         cambiarKey = view.findViewById(R.id.imageButton7);
         cuenta = view.findViewById(R.id.imageButton8);
+        salir = view.findViewById(R.id.imageButton9);
+        volverPerfil = view.findViewById(R.id.botonPerfil);
 
 
 
@@ -56,17 +60,24 @@ public class MenuPerfilFragment extends Fragment {
             }
         });
 
+        volverPerfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_opcionesFragment);
+            }
+        });
+
         buttonSuscripciones.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_menuPerfilFragment_to_menuSuscripcionesFragment);
+                navController.navigate(R.id.action_menuSuscripcionesFragment);
             }
         });
 
         buttonCamara.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_menuPerfilFragment_to_menuCamaraFragment);
+                navController.navigate(R.id.action_menuCamaraFragment);
             }
         });
 
@@ -95,6 +106,13 @@ public class MenuPerfilFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.action_cuenta);
+            }
+        });
+
+        salir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_menuPerfilFragment_to_pantallaInicio);
             }
         });
     }

@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#011900"
-    tools:context=".MenuPerfilFragment">
-
-
+    tools:context=".opcionesFragment">
 
     <ImageButton
         android:id="@+id/logoVolver"
@@ -17,7 +15,7 @@
         android:src="@drawable/logo2" />
 
     <LinearLayout
-        android:id="@id/imageButton3"
+        android:id="@id/imageButtonCuenta"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:backgroundTint="#FFFFFF"
@@ -25,17 +23,17 @@
         android:translationY="100dp">
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/imageButtonCuenta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#00FFFFFF"
             android:src="@drawable/perfil" />
 
         <TextView
-            android:id="@+id/textViewPerfil"
+            android:id="@+id/textViewGestionarCuenta"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:text="Cambiar imagen de perfil"
+            android:text="Gestionar cuenta"
             android:textColor="@color/white"
             android:textSize="18dp"
             android:translationX="75dp"
@@ -43,23 +41,23 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@id/imageButton4"
+        android:id="@id/imageButtonCanal"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="vertical"
         android:translationY="170dp">
 
         <ImageButton
-            android:id="@+id/imageButton4"
+            android:id="@+id/imageButtonCanal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#00FFFFFF"
-            android:src="@drawable/cambiarapodo" />
+            android:src="@drawable/canal" />
         <TextView
-            android:id="@+id/textViewApodo"
+            android:id="@+id/textViewCanal"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:text="Cambiar apodo"
+            android:text="Tu canal"
             android:textColor="@color/white"
             android:translationY="-39dp"
             android:translationX="75dp"
@@ -67,23 +65,23 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@id/imageButton7"
+        android:id="@id/imageButtonAjustes"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="vertical"
         android:translationY="230dp">
 
         <ImageButton
-            android:id="@+id/imageButton7"
+            android:id="@+id/imageButtonAjustes"
             android:layout_width="63dp"
             android:layout_height="match_parent"
             android:backgroundTint="#00FFFFFF"
-            android:src="@drawable/cambiarkey" />
+            android:src="@drawable/ajustes" />
         <TextView
-            android:id="@+id/textViewKey"
+            android:id="@+id/textViewAjustes"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:text="Cambiar contraseña"
+            android:text="Ajustes"
             android:textColor="@color/white"
             android:translationY="-39dp"
             android:translationX="75dp"
@@ -91,23 +89,23 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@id/imageButton8"
+        android:id="@id/imageButtonBuzon"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="vertical"
         android:translationY="310dp">
 
         <ImageButton
-            android:id="@+id/imageButton8"
+            android:id="@+id/imageButtonBuzon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#00FFFFFF"
-            android:src="@drawable/cuentanueva" />
+            android:src="@drawable/mail" />
         <TextView
-            android:id="@+id/textViewCuenta"
+            android:id="@+id/textViewBuzon"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:text="Añadir nueva cuenta"
+            android:text="Buzón de sugerencias"
             android:textColor="@color/white"
             android:translationY="-39dp"
             android:translationX="75dp"
@@ -115,23 +113,23 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@id/imageButton9"
+        android:id="@id/imageButtonAyuda"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="vertical"
         android:translationY="380dp">
 
         <ImageButton
-            android:id="@+id/imageButton9"
+            android:id="@+id/imageButtonAyuda"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#03FFFFFF"
-            android:src="@drawable/cerrarsesion" />
+            android:src="@drawable/ayuda" />
         <TextView
-            android:id="@+id/textViewCerrar"
+            android:id="@+id/textViewAyuda"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:text="Cerrar sesión"
+            android:text="Ayuda y consejos"
             android:textColor="@color/white"
             android:translationY="-39dp"
             android:translationX="75dp"
