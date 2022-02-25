@@ -41,7 +41,7 @@ public class opcionesFragment extends Fragment {
         buttonCamara = view.findViewById(R.id.botonCamara);
         volver = view.findViewById(R.id.logoVolver);
         cuenta = view.findViewById(R.id.imageButtonCuenta);
-        canal = view.findViewById(R.id.imageButtonCuenta);
+        canal = view.findViewById(R.id.imageButtonCanal);
         ajustes = view.findViewById(R.id.imageButtonAjustes);
         buzon = view.findViewById(R.id.imageButtonBuzon);
         ayuda = view.findViewById(R.id.imageButtonAyuda);
@@ -88,5 +88,14 @@ public class opcionesFragment extends Fragment {
                 navController.navigate(R.id.action_CanalFragment);
             }
         });
+
+
+        buzon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_BuzonSugerenciasFragment);
+            }
+        });
     }
+
 }

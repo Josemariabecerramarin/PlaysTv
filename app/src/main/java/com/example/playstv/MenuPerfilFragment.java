@@ -44,7 +44,7 @@ public class MenuPerfilFragment extends Fragment {
         buttonVolver = view.findViewById(R.id.logoVolver);
         buttonSuscripciones = view.findViewById(R.id.botonSuscripciones);
         buttonCamara = view.findViewById(R.id.botonCamara);
-        perfil = view.findViewById(R.id.imageButton3);
+        perfil = view.findViewById(R.id.cambiarImagenPerfil);
         apodo = view.findViewById(R.id.imageButton4);
         cambiarKey = view.findViewById(R.id.imageButton7);
         cuenta = view.findViewById(R.id.imageButton8);

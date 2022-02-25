@@ -3,19 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_buzon_sugerencias.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_cambiar_apodo.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_cambiar_imagen_perfil.xml" value="0.25" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_inicio_sesion.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_menu_perfil.xml" value="0.1" />
+        <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_menu_ajustes.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_menu_perfil.xml" value="0.22" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_menu_principal.xml" value="0.14" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_menu_suscripciones.xml" value="0.1" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_opciones.xml" value="0.14733542319749215" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_registrarse.xml" value="0.12314814814814815" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19791666666666666" />
         <entry key="app/src/main/res/layout/egistrarsefragment.xml" value="0.3138586956521739" />
-        <entry key="app/src/main/res/layout/fragment_cambiar_imagen_perfil.xml" value="0.18229166666666666" />
-        <entry key="app/src/main/res/layout/fragment_cuenta.xml" value="0.19791666666666666" />
         <entry key="app/src/main/res/layout/fragment_inicio_sesion.xml" value="0.31478770131771594" />
-        <entry key="app/src/main/res/layout/fragment_menu_ajustes.xml" value="0.2" />
-        <entry key="app/src/main/res/layout/fragment_menu_perfil.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_menu_principal.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_pantalla_inicio.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_rata.xml" value="0.19791666666666666" />
