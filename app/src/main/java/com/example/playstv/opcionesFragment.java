@@ -96,6 +96,12 @@ public class opcionesFragment extends Fragment {
                 navController.navigate(R.id.action_BuzonSugerenciasFragment);
             }
         });
+        ayuda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.ayudaConsejoFragment);
+            }
+        });
     }
 
 }

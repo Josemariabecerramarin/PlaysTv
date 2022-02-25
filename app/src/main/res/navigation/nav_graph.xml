@@ -141,12 +141,13 @@
     <action
         android:id="@+id/action_BuzonSugerenciasFragment"
         app:destination="@id/buzonSugerenciasFragment"/>
-    <fragment
-        android:id="@+id/ayudaConsejosFragment"
-        android:name="com.example.playstv.AyudaConsejosFragment"
-        android:label="fragment_ayuda_consejos"
-        tools:layout="@layout/fragment_ayuda_consejos" />
+
     <action
-        android:id="@+id/action_AyudaConsejosFragment"
-        app:destination="@id/ayudaConsejosFragment"/>
+        android:id="@+id/action_AyudaConsejoFragment"
+        app:destination="@id/ayudaConsejoFragment"/>
+    <fragment
+        android:id="@+id/ayudaConsejoFragment"
+        android:name="com.example.playstv.AyudaConsejoFragment"
+        android:label="fragment_ayuda_consejo"
+        tools:layout="@layout/fragment_ayuda_consejo" />
 </navigation>

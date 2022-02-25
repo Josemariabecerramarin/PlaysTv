@@ -18,6 +18,9 @@ public class CambiarImagenPerfilFragment extends Fragment {
     NavController navController;
     ImageButton buttonVolver;
     ImageButton flecha;
+    ImageButton buttonSuscripciones;
+    ImageButton buttonPerfil;
+    ImageButton buttonCamara;
 
 
 
@@ -35,6 +38,9 @@ public class CambiarImagenPerfilFragment extends Fragment {
 
         buttonVolver = view.findViewById(R.id.logoVolver);
         flecha = view.findViewById(R.id.botonFlecha);
+        buttonSuscripciones = view.findViewById(R.id.botonSuscripciones);
+        buttonPerfil = view.findViewById(R.id.botonPerfil);
+        buttonCamara = view.findViewById(R.id.botonCamara);
 
         buttonVolver.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +52,27 @@ public class CambiarImagenPerfilFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.action_menuPerfilFragment);
+            }
+        });
+
+        buttonSuscripciones.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_menuSuscripcionesFragment);
+            }
+        });
+
+        buttonPerfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_opcionesFragment);
+            }
+        });
+
+        buttonCamara.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_menuCamaraFragment);
             }
         });
     }
