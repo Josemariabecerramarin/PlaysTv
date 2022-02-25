@@ -149,5 +149,28 @@
         android:id="@+id/ayudaConsejoFragment"
         android:name="com.example.playstv.AyudaConsejoFragment"
         android:label="fragment_ayuda_consejo"
-        tools:layout="@layout/fragment_ayuda_consejo" />
+        tools:layout="@layout/fragment_ayuda_consejo" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/menuVerHistorialFragment"
+        android:name="com.example.playstv.MenuVerHistorialFragment"
+        android:label="fragment_menu_ver_historial"
+        tools:layout="@layout/fragment_menu_ver_historial" />
+    <action
+        android:id="@+id/action_menuVerHistorialFragment"
+        app:destination="@id/menuVerHistorialFragment" />
+    <fragment
+        android:id="@+id/consultarSubsFragment"
+        android:name="com.example.playstv.ConsultarSubsFragment"
+        android:label="fragment_consultar_subs"
+        tools:layout="@layout/fragment_consultar_subs" />
+    <action
+        android:id="@+id/action_consultarSubsFragment"
+        app:destination="@id/consultarSubsFragment" />
+    <fragment
+        android:id="@+id/iniciarCerrarFragment"
+        android:name="com.example.playstv.IniciarCerrarFragment"
+        android:label="fragment_iniciar_cerrar"
+        tools:layout="@layout/fragment_iniciar_cerrar" />
 </navigation>

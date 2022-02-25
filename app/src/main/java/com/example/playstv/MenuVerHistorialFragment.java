@@ -12,20 +12,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 
-public class AyudaConsejoFragment extends Fragment {
+public class MenuVerHistorialFragment extends Fragment {
     NavController navController;
     ImageButton flecha;
     ImageButton volver;
-    LinearLayout verHistorial;
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_ayuda_consejo, container, false);
+        return inflater.inflate(R.layout.fragment_menu_ver_historial, container, false);
     }
 
     @Override
@@ -35,12 +32,11 @@ public class AyudaConsejoFragment extends Fragment {
 
         flecha = view.findViewById(R.id.botonFlecha);
         volver = view.findViewById(R.id.logoVolver);
-        verHistorial = view.findViewById(R.id.verhistorial);
 
         flecha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_opcionesFragment);
+                navController.navigate(R.id.action_AyudaConsejoFragment);
             }
         });
 
@@ -48,13 +44,6 @@ public class AyudaConsejoFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.action_menuPrincipalFragment);
-            }
-        });
-
-        verHistorial.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                navController.navigate(R.id.action_menuVerHistorialFragment);
             }
         });
     }
