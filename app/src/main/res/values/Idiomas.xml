@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="planets_array">
+        <item>Catalán</item>
+        <item>Inglés</item>
+        <item>Chino</item>
+        <item>Castellano</item>
+        <item>Francés</item>
+        <item>Rumano</item>
+        <item>Alemán</item>
+        <item>Italiano</item>
+    </string-array>
+</resources>

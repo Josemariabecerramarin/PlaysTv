@@ -11,13 +11,16 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.Spinner;
 
 
 public class menuAjustesFragment extends Fragment {
     NavController navController;
     ImageButton volver;
     ImageButton retroceder;
+    Spinner idioma;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -47,5 +50,12 @@ public class menuAjustesFragment extends Fragment {
                 navController.navigate(R.id.action_opcionesFragment);
             }
         });
+
+        idioma = view.findViewById(R.id.spinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this.getContext(),
+                R.array.planets_array, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        idioma.setAdapter(adapter);
     }
 }
