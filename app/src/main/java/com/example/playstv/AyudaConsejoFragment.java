@@ -19,6 +19,9 @@ public class AyudaConsejoFragment extends Fragment {
     ImageButton flecha;
     ImageButton volver;
     LinearLayout verHistorial;
+    LinearLayout verConsultar;
+    LinearLayout verIniciar;
+    LinearLayout verActivar;
 
 
     @Override
@@ -36,6 +39,9 @@ public class AyudaConsejoFragment extends Fragment {
         flecha = view.findViewById(R.id.botonFlecha);
         volver = view.findViewById(R.id.logoVolver);
         verHistorial = view.findViewById(R.id.verhistorial);
+        verConsultar = view.findViewById(R.id.verConsultar);
+        verIniciar = view.findViewById(R.id.verIniciar);
+        verActivar = view.findViewById(R.id.verActivar);
 
         flecha.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +61,27 @@ public class AyudaConsejoFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.action_menuVerHistorialFragment);
+            }
+        });
+
+        verConsultar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_consultarSubsFragment);
+            }
+        });
+
+        verIniciar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_iniciarCerrarFragment);
+            }
+        });
+
+        verActivar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_controlParentalFragment);
             }
         });
     }

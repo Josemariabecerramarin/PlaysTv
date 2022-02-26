@@ -65,7 +65,8 @@
         android:id="@+id/menuCamaraFragment"
         android:name="com.example.playstv.MenuCamaraFragment"
         android:label="fragment_menu_camara"
-        tools:layout="@layout/fragment_menu_camara" />
+        tools:layout="@layout/fragment_menu_camara" >
+    </fragment>
     <action
         android:id="@+id/action_menuCamaraFragment"
         app:destination="@id/menuCamaraFragment" />
@@ -150,7 +151,6 @@
         android:name="com.example.playstv.AyudaConsejoFragment"
         android:label="fragment_ayuda_consejo"
         tools:layout="@layout/fragment_ayuda_consejo" >
-
     </fragment>
     <fragment
         android:id="@+id/menuVerHistorialFragment"
@@ -173,4 +173,39 @@
         android:name="com.example.playstv.IniciarCerrarFragment"
         android:label="fragment_iniciar_cerrar"
         tools:layout="@layout/fragment_iniciar_cerrar" />
+    <action
+        android:id="@+id/action_iniciarCerrarFragment"
+        app:destination="@id/iniciarCerrarFragment" />
+    <fragment
+        android:id="@+id/controlParentalFragment"
+        android:name="com.example.playstv.controlParentalFragment"
+        android:label="fragment_control_parental"
+        tools:layout="@layout/fragment_control_parental" />
+    <action
+        android:id="@+id/action_controlParentalFragment"
+        app:destination="@id/controlParentalFragment" />
+    <fragment
+        android:id="@+id/subirVideoFragment"
+        android:name="com.example.playstv.SubirVideoFragment"
+        android:label="fragment_subir_video"
+        tools:layout="@layout/fragment_subir_video" />
+    <action
+        android:id="@+id/action_subirVideoFragment"
+        app:destination="@id/subirVideoFragment" />
+    <fragment
+        android:id="@+id/grabarVideoFragment"
+        android:name="com.example.playstv.GrabarVideoFragment"
+        android:label="fragment_grabar_video"
+        tools:layout="@layout/fragment_grabar_video" />
+    <action
+        android:id="@+id/action_grabarVideoFragment"
+        app:destination="@id/grabarVideoFragment" />
+    <fragment
+        android:id="@+id/emitirDirectoFragment"
+        android:name="com.example.playstv.EmitirDirectoFragment"
+        android:label="fragment_emitir_directo"
+        tools:layout="@layout/fragment_emitir_directo" />
+    <action
+        android:id="@+id/action_emitirDirectoFragment"
+        app:destination="@id/emitirDirectoFragment" />
 </navigation>

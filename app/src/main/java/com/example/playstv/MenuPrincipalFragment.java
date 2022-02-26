@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
@@ -26,6 +27,9 @@ public class MenuPrincipalFragment<ibLis> extends Fragment {
     ImageButton buttonSuscripciones;
     ImageButton buttonPerfil;
     ImageButton buttonCamara;
+    FrameLayout redes;
+    ImageButton compartir;
+    boolean clicado = true;
 
 
     @Override
@@ -45,7 +49,11 @@ public class MenuPrincipalFragment<ibLis> extends Fragment {
         buttonSuscripciones = view.findViewById(R.id.botonSuscripciones);
         buttonPerfil = view.findViewById(R.id.botonPerfil);
         buttonCamara = view.findViewById(R.id.botonCamara);
+        redes = view.findViewById(R.id.redes);
+        compartir = view.findViewById(R.id.compartir);
 
+
+        redes.setVisibility(View.GONE);
 
         buttonSuscripciones.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -65,6 +73,18 @@ public class MenuPrincipalFragment<ibLis> extends Fragment {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.action_menuCamaraFragment);
+            }
+        });
+        compartir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(clicado){
+                redes.setVisibility(View.VISIBLE);
+                clicado = false;
+                }else{
+                    redes.setVisibility(View.GONE);
+                    clicado = true;
+                }
             }
         });
     }

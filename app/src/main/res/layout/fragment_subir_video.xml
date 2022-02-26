@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MenuCamaraFragment">
+    tools:context=".SubirVideoFragment">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -13,48 +13,63 @@
         android:background="#011900">
 
         <ImageButton
+            android:id="@+id/botonFlecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:src="@drawable/flecha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
             android:id="@+id/logoVolver"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#00FFFFFF"
             android:src="@drawable/logo2"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/subir"
+        <ImageButton
+            android:id="@+id/subirVideo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Subir video"
-            android:textColor="@color/white"
-            android:textSize="18dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/subirvideo"
             app:layout_constraintTop_toBottomOf="@id/logoVolver"
-            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/crearVideo"/>
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/descripción"/>
 
-        <TextView
-            android:id="@+id/crearVideo"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/descripción"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Crear video"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Escribe una suscripción del video"
             android:textColor="@color/white"
-            android:textSize="18dp"
-            app:layout_constraintTop_toBottomOf="@id/subir"
-            app:layout_constraintRight_toRightOf="parent"
+            android:textColorHint="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/subirVideo"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/emitirDirecto"/>
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/buttonSubirVideo"
+            android:gravity="center_horizontal"/>
 
-        <TextView
-            android:id="@+id/emitirDirecto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Emitir directo"
-            android:textColor="@color/white"
-            android:textSize="18dp"
-            app:layout_constraintTop_toBottomOf="@id/crearVideo"
-            app:layout_constraintRight_toRightOf="parent"
+        <Button
+            android:id="@+id/buttonSubirVideo"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#41AB00"
+            android:text="Subir video"
+            app:cornerRadius="50dp"
+            app:layout_constraintTop_toBottomOf="@id/descripción"
             app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"/>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView

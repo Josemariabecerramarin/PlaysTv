@@ -17,6 +17,7 @@ import android.widget.ImageButton;
 public class BuzonSugerenciasFragment extends Fragment {
     NavController navController;
     ImageButton Flecha;
+    ImageButton volver;
 
 
     @Override
@@ -31,11 +32,19 @@ public class BuzonSugerenciasFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
         Flecha = view.findViewById(R.id.botonFlecha);
+        volver = view.findViewById(R.id.logoVolver);
 
         Flecha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.action_opcionesFragment);
+            }
+        });
+
+        volver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_menuPrincipalFragment);
             }
         });
     }

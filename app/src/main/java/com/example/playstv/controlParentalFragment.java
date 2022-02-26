@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
-public class CanalFragment extends Fragment {
+public class controlParentalFragment extends Fragment {
     NavController navController;
     ImageButton flecha;
     ImageButton volver;
@@ -22,7 +22,7 @@ public class CanalFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_canal, container, false);
+        return inflater.inflate(R.layout.fragment_control_parental, container, false);
     }
 
     @Override
