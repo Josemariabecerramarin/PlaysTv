@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#011900">
+<androidx.constraintlayout.widget.ConstraintLayout
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".InicioSesionFragment">
@@ -12,8 +19,10 @@
         android:layout_height="match_parent"
         android:background="#011900"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="30dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -24,49 +33,49 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/nombre_usuario"/>
+        app:layout_constraintBottom_toTopOf="@id/introduce_correo"/>
 
-    <EditText
-        android:id="@+id/nombre_usuario"
-        android:layout_width="wrap_content"
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Introduce tu usuario"
-        android:inputType="textEmailAddress"
-        android:lines="20"
-        android:singleLine="false"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#74FFFFFF"
-        android:textColorLink="@color/white"
-        app:backgroundTint="@color/white"
-        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintBottom_toTopOf="@+id/contraseña"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/contraseña_usuario"/>
+        app:mtf_labelColor="#666"
+        tools:layout_editor_absoluteX="40dp"
+        android:id="@+id/introduce_correo">
 
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/contraseña_usuario"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        app:endIconMode="password_toggle"
-        app:layout_constraintTop_toBottomOf="@id/nombre_usuario"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/buttonIniciar">
-
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
+            android:id="@+id/prueba"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#00FFFFFF"
-            android:ems="10"
+            android:hint="Usuario"
+            android:textColor="#333"
+            android:textSize="15sp" />
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/buttonIniciar"
+        app:layout_constraintTop_toBottomOf="@+id/introduce_correo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:mtf_labelColor="#666"
+        tools:layout_editor_absoluteX="40dp"
+        android:id="@+id/contraseña">
+
+        <EditText
+            android:id="@+id/prueba2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:hint="Contraseña"
-            android:inputType="textPassword"
-            android:textColor="@color/white"
-            android:textColorHighlight="@color/white"
-            android:textColorHint="@color/white"
-            android:textColorLink="@color/white" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:textColor="#333"
+            android:textSize="15sp" />
+    </com.github.florent37.materialtextfield.MaterialTextField>
 
     <Button
         android:id="@+id/buttonIniciar"
@@ -75,10 +84,12 @@
         android:backgroundTint="#41AB00"
         android:text="Iniciar sesion"
         app:cornerRadius="50dp"
-        app:layout_constraintTop_toBottomOf="@id/contraseña_usuario"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toBottomOf="@id/contraseña"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

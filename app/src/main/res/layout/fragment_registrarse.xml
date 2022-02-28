@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#011900">
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".registrarseFragment">
@@ -25,77 +31,85 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toTopOf="@id/introduce_correo"/>
 
-    <EditText
-        android:id="@+id/introduce_correo"
-        android:layout_width="wrap_content"
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:ems="10"
-        android:hint="Introduce tu correo"
-        android:inputType="textEmailAddress"
-        android:lines="20"
-        android:singleLine="false"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#73FFFFFF"
-        app:backgroundTint="@color/white"
-        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintBottom_toTopOf="@+id/introduce_usuario"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/introduce_usuario"/>
+        app:mtf_labelColor="#666"
+        tools:layout_editor_absoluteX="40dp"
+        android:id="@+id/introduce_correo">
 
-    <EditText
-        android:id="@+id/introduce_usuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:ems="10"
-        android:hint="Introduce tu nombre"
-        android:inputType="text"
-        android:lines="20"
-        android:singleLine="false"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#73FFFFFF"
-        app:backgroundTint="@color/white"
-        app:layout_constraintTop_toBottomOf="@id/introduce_correo"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/introduce_contraseña"/>
+        <EditText
+            android:id="@+id/correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce tu correo"
+            android:textColor="#333"
+            android:textSize="15sp" />
+    </com.github.florent37.materialtextfield.MaterialTextField>
 
-    <EditText
-        android:id="@+id/introduce_contraseña"
-        android:layout_width="wrap_content"
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:ems="10"
-        android:hint="Introduce tu contraseña"
-        android:inputType="textPassword"
-        android:lines="20"
-        android:singleLine="false"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#73FFFFFF"
-        app:backgroundTint="@color/white"
-        app:layout_constraintTop_toBottomOf="@id/introduce_usuario"
+        app:layout_constraintBottom_toTopOf="@+id/introduce_contraseña"
+        app:layout_constraintTop_toBottomOf="@+id/introduce_correo"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/repetir_contraseña"/>
+        app:mtf_labelColor="#666"
+        tools:layout_editor_absoluteX="40dp"
+        android:id="@+id/introduce_usuario">
 
-    <EditText
-        android:id="@+id/repetir_contraseña"
-        android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce tu nombre"
+            android:textColor="#333"
+            android:textSize="15sp" />
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:ems="10"
-        android:hint="Repite la contraseña"
-        android:inputType="textPassword"
-        android:lines="20"
-        android:singleLine="false"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#73FFFFFF"
-        app:backgroundTint="@color/white"
-        app:layout_constraintTop_toBottomOf="@id/introduce_contraseña"
+        app:layout_constraintBottom_toTopOf="@+id/repetir_contraseña"
+        app:layout_constraintTop_toBottomOf="@+id/introduce_usuario"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/buttonRegistrado"/>
+        app:mtf_labelColor="#666"
+        tools:layout_editor_absoluteX="40dp"
+        android:id="@+id/introduce_contraseña">
+
+        <EditText
+            android:id="@+id/prueba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduce una contraseña"
+            android:textColor="#333"
+            android:textSize="15sp" />
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegistrado"
+        app:layout_constraintTop_toBottomOf="@+id/introduce_contraseña"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:mtf_labelColor="#666"
+        tools:layout_editor_absoluteX="40dp"
+        android:id="@+id/repetir_contraseña">
+
+        <EditText
+            android:id="@+id/repetir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Repite la contraseña"
+            android:textColor="#333"
+            android:textSize="15sp" />
+    </com.github.florent37.materialtextfield.MaterialTextField>
 
     <Button
         android:id="@+id/buttonRegistrado"
@@ -112,3 +126,4 @@
         app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
