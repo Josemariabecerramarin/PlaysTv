@@ -13,16 +13,6 @@
     android:layout_height="match_parent"
     tools:context=".InicioSesionFragment">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#011900"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintLeft_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -76,7 +66,18 @@
             android:textColor="#333"
             android:textSize="15sp" />
     </com.github.florent37.materialtextfield.MaterialTextField>
-
+    <com.tuyenmonkey.mkloader.MKLoader
+        android:id="@+id/carga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:mk_type="TwinFishesSpinner"
+        app:mk_color="#41AB00"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"/>
     <Button
         android:id="@+id/buttonIniciar"
         android:layout_width="160dp"
