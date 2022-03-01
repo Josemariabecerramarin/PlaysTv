@@ -11,9 +11,7 @@
         android:label="fragment_pantalla_inicio"
         tools:layout="@layout/fragment_pantalla_inicio" >
 
-
     </fragment>
-
 
     <fragment
         android:id="@+id/registrarseFragment"
@@ -41,7 +39,11 @@
         app:destination="@id/registrarseFragment" />
     <action
         android:id="@+id/action_menuPrincipalFragment"
-        app:destination="@id/menuPrincipalFragment" />
+        app:destination="@id/menuPrincipalFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     <fragment
         android:id="@+id/menuSuscripcionesFragment"
         android:name="com.example.playstv.MenuSuscripcionesFragment"
@@ -49,7 +51,11 @@
         tools:layout="@layout/fragment_menu_suscripciones" />
     <action
         android:id="@+id/action_menuSuscripcionesFragment"
-        app:destination="@id/menuSuscripcionesFragment" />
+        app:destination="@id/menuSuscripcionesFragment"
+        app:enterAnim="@android:anim/slide_out_right"
+        app:exitAnim="@android:anim/slide_in_left"
+        app:popEnterAnim="@android:anim/slide_out_right"
+        app:popExitAnim="@android:anim/slide_in_left"/>
     <fragment
         android:id="@+id/menuPerfilFragment"
         android:name="com.example.playstv.MenuPerfilFragment"
@@ -69,10 +75,18 @@
     </fragment>
     <action
         android:id="@+id/action_menuCamaraFragment"
-        app:destination="@id/menuCamaraFragment" />
+        app:destination="@id/menuCamaraFragment"
+        app:enterAnim="@android:anim/slide_out_right"
+        app:exitAnim="@android:anim/slide_in_left"
+        app:popEnterAnim="@android:anim/slide_out_right"
+        app:popExitAnim="@android:anim/slide_in_left"/>
     <action
         android:id="@+id/action_menuPrincipalFragment2"
-        app:destination="@id/menuPrincipalFragment" />
+        app:destination="@id/menuPrincipalFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     <fragment
         android:id="@+id/cambiarImagenPerfilFragment"
         android:name="com.example.playstv.CambiarImagenPerfilFragment"
@@ -80,7 +94,11 @@
         tools:layout="@layout/fragment_cambiar_imagen_perfil" />
     <action
         android:id="@+id/action_cambiarImagenPerfilFragment"
-        app:destination="@id/cambiarImagenPerfilFragment" />
+        app:destination="@id/cambiarImagenPerfilFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        app:popEnterAnim="@android:anim/fade_in"
+        app:popExitAnim="@android:anim/fade_out" />
     <fragment
         android:id="@+id/cambiarApodoFragment"
         android:name="com.example.playstv.cambiarApodoFragment"
@@ -88,7 +106,11 @@
         tools:layout="@layout/fragment_cambiar_apodo" />
     <action
         android:id="@+id/action_cambiarApodoFragment"
-        app:destination="@id/cambiarApodoFragment" />
+        app:destination="@id/cambiarApodoFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        app:popEnterAnim="@android:anim/fade_in"
+        app:popExitAnim="@android:anim/fade_out" />
     <fragment
         android:id="@+id/cambiarKeyFragment"
         android:name="com.example.playstv.cambiarKeyFragment"
@@ -96,7 +118,11 @@
         tools:layout="@layout/fragment_cambiar_key" />
     <action
         android:id="@+id/action_cambiarKeyFragment"
-        app:destination="@id/cambiarKeyFragment" />
+        app:destination="@id/cambiarKeyFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        app:popEnterAnim="@android:anim/fade_in"
+        app:popExitAnim="@android:anim/fade_out"/>
     <fragment
         android:id="@+id/cuentaFragment"
         android:name="com.example.playstv.cuentaFragment"
@@ -104,7 +130,11 @@
         tools:layout="@layout/fragment_cuenta" />
     <action
         android:id="@+id/action_cuenta"
-        app:destination="@id/cuentaFragment"/>
+        app:destination="@id/cuentaFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        app:popEnterAnim="@android:anim/fade_in"
+        app:popExitAnim="@android:anim/fade_out"/>
     <fragment
         android:id="@+id/opcionesFragment"
         android:name="com.example.playstv.opcionesFragment"
@@ -114,10 +144,18 @@
     </fragment>
     <action
         android:id="@+id/action_opcionesFragment"
-        app:destination="@id/opcionesFragment" />
+        app:destination="@id/opcionesFragment"
+        app:enterAnim="@android:anim/slide_in_left"
+        app:exitAnim="@android:anim/slide_out_right"
+        app:popEnterAnim="@android:anim/slide_in_left"
+        app:popExitAnim="@android:anim/slide_out_right" />
     <action
         android:id="@+id/action_menuPerfilFragment"
-        app:destination="@id/menuPerfilFragment" />
+        app:destination="@id/menuPerfilFragment"
+        app:enterAnim="@android:anim/slide_out_right"
+        app:exitAnim="@android:anim/slide_in_left"
+        app:popEnterAnim="@android:anim/slide_out_right"
+        app:popExitAnim="@android:anim/slide_in_left"/>
     <fragment
         android:id="@+id/menuAjustesFragment"
         android:name="com.example.playstv.menuAjustesFragment"
@@ -125,7 +163,11 @@
         tools:layout="@layout/fragment_menu_ajustes" />
     <action
         android:id="@+id/action_AjustesFragment"
-        app:destination="@id/menuAjustesFragment"/>
+        app:destination="@id/menuAjustesFragment"
+        app:enterAnim="@android:anim/slide_in_left"
+        app:exitAnim="@android:anim/slide_out_right"
+        app:popEnterAnim="@android:anim/slide_in_left"
+        app:popExitAnim="@android:anim/slide_out_right"/>
     <fragment
         android:id="@+id/canalFragment"
         android:name="com.example.playstv.CanalFragment"
@@ -133,7 +175,11 @@
         tools:layout="@layout/fragment_canal" />
     <action
         android:id="@+id/action_CanalFragment"
-        app:destination="@id/canalFragment"/>
+        app:destination="@id/canalFragment"
+        app:enterAnim="@android:anim/slide_in_left"
+        app:exitAnim="@android:anim/slide_out_right"
+        app:popEnterAnim="@android:anim/slide_in_left"
+        app:popExitAnim="@android:anim/slide_out_right"/>
     <fragment
         android:id="@+id/buzonSugerenciasFragment"
         android:name="com.example.playstv.BuzonSugerenciasFragment"
@@ -141,11 +187,19 @@
         tools:layout="@layout/fragment_buzon_sugerencias" />
     <action
         android:id="@+id/action_BuzonSugerenciasFragment"
-        app:destination="@id/buzonSugerenciasFragment"/>
+        app:destination="@id/buzonSugerenciasFragment"
+        app:enterAnim="@android:anim/slide_in_left"
+        app:exitAnim="@android:anim/slide_out_right"
+        app:popEnterAnim="@android:anim/slide_in_left"
+        app:popExitAnim="@android:anim/slide_out_right"/>
 
     <action
         android:id="@+id/action_AyudaConsejoFragment"
-        app:destination="@id/ayudaConsejoFragment"/>
+        app:destination="@id/ayudaConsejoFragment"
+        app:enterAnim="@android:anim/slide_in_left"
+        app:exitAnim="@android:anim/slide_out_right"
+        app:popEnterAnim="@android:anim/slide_in_left"
+        app:popExitAnim="@android:anim/slide_out_right"/>
     <fragment
         android:id="@+id/ayudaConsejoFragment"
         android:name="com.example.playstv.AyudaConsejoFragment"
@@ -159,7 +213,11 @@
         tools:layout="@layout/fragment_menu_ver_historial" />
     <action
         android:id="@+id/action_menuVerHistorialFragment"
-        app:destination="@id/menuVerHistorialFragment" />
+        app:destination="@id/menuVerHistorialFragment"
+        app:enterAnim="@android:anim/slide_in_left"
+        app:exitAnim="@android:anim/slide_out_right"
+        app:popEnterAnim="@android:anim/slide_in_left"
+        app:popExitAnim="@android:anim/slide_out_right"/>
     <fragment
         android:id="@+id/consultarSubsFragment"
         android:name="com.example.playstv.ConsultarSubsFragment"
@@ -167,7 +225,11 @@
         tools:layout="@layout/fragment_consultar_subs" />
     <action
         android:id="@+id/action_consultarSubsFragment"
-        app:destination="@id/consultarSubsFragment" />
+        app:destination="@id/consultarSubsFragment"
+        app:enterAnim="@android:anim/slide_in_left"
+        app:exitAnim="@android:anim/slide_out_right"
+        app:popEnterAnim="@android:anim/slide_in_left"
+        app:popExitAnim="@android:anim/slide_out_right"/>
     <fragment
         android:id="@+id/iniciarCerrarFragment"
         android:name="com.example.playstv.IniciarCerrarFragment"
@@ -175,7 +237,11 @@
         tools:layout="@layout/fragment_iniciar_cerrar" />
     <action
         android:id="@+id/action_iniciarCerrarFragment"
-        app:destination="@id/iniciarCerrarFragment" />
+        app:destination="@id/iniciarCerrarFragment"
+        app:enterAnim="@android:anim/slide_in_left"
+        app:exitAnim="@android:anim/slide_out_right"
+        app:popEnterAnim="@android:anim/slide_in_left"
+        app:popExitAnim="@android:anim/slide_out_right"/>
     <fragment
         android:id="@+id/controlParentalFragment"
         android:name="com.example.playstv.controlParentalFragment"
@@ -183,7 +249,11 @@
         tools:layout="@layout/fragment_control_parental" />
     <action
         android:id="@+id/action_controlParentalFragment"
-        app:destination="@id/controlParentalFragment" />
+        app:destination="@id/controlParentalFragment"
+        app:enterAnim="@android:anim/slide_in_left"
+        app:exitAnim="@android:anim/slide_out_right"
+        app:popEnterAnim="@android:anim/slide_in_left"
+        app:popExitAnim="@android:anim/slide_out_right"/>
     <fragment
         android:id="@+id/subirVideoFragment"
         android:name="com.example.playstv.SubirVideoFragment"
@@ -191,7 +261,11 @@
         tools:layout="@layout/fragment_subir_video" />
     <action
         android:id="@+id/action_subirVideoFragment"
-        app:destination="@id/subirVideoFragment" />
+        app:destination="@id/subirVideoFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        app:popEnterAnim="@android:anim/fade_in"
+        app:popExitAnim="@android:anim/fade_out"/>
     <fragment
         android:id="@+id/grabarVideoFragment"
         android:name="com.example.playstv.GrabarVideoFragment"
@@ -199,7 +273,11 @@
         tools:layout="@layout/fragment_grabar_video" />
     <action
         android:id="@+id/action_grabarVideoFragment"
-        app:destination="@id/grabarVideoFragment" />
+        app:destination="@id/grabarVideoFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        app:popEnterAnim="@android:anim/fade_in"
+        app:popExitAnim="@android:anim/fade_out"/>
     <fragment
         android:id="@+id/emitirDirectoFragment"
         android:name="com.example.playstv.EmitirDirectoFragment"
@@ -207,5 +285,9 @@
         tools:layout="@layout/fragment_emitir_directo" />
     <action
         android:id="@+id/action_emitirDirectoFragment"
-        app:destination="@id/emitirDirectoFragment" />
+        app:destination="@id/emitirDirectoFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        app:popEnterAnim="@android:anim/fade_in"
+        app:popExitAnim="@android:anim/fade_out"/>
 </navigation>

@@ -22,7 +22,7 @@
             android:scaleX="1.2"
             android:scaleY="1.2"
             android:src="@drawable/flecha"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#00FFFFFF"
             android:src="@drawable/logo2"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
@@ -41,10 +41,10 @@
             android:layout_marginTop="-60dp"
             android:backgroundTint="#FFFFFF"
             android:orientation="vertical"
-            android:translationY="130dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/logoVolver">
+            app:layout_constraintTop_toBottomOf="@+id/logoVolver"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/botonControlParental">
 
             <ImageButton
                 android:id="@+id/botonHistorial"
@@ -68,12 +68,11 @@
             android:id="@id/botonControlParental"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginTop="-50dp"
             android:orientation="vertical"
-            android:translationY="200dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/botonHistorial">
+            app:layout_constraintTop_toBottomOf="@+id/botonHistorial"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/botonIdioma">
 
             <ImageButton
                 android:id="@+id/botonControlParental"
@@ -107,10 +106,10 @@
             android:layout_height="60dp"
             android:layout_marginTop="-40dp"
             android:orientation="vertical"
-            android:translationY="260dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/botonControlParental">
+            app:layout_constraintTop_toBottomOf="@+id/botonControlParental"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
 
             <ImageButton
                 android:id="@+id/botonIdioma"
