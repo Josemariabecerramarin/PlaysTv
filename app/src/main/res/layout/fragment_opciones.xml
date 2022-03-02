@@ -96,7 +96,7 @@
             android:layout_height="35dp"
             android:text="Ajustes"
             android:textColor="@color/white"
-            android:translationY="-39dp"
+            android:translationY="-46dp"
             android:translationX="75dp"
             android:textSize="18dp"/>
     </LinearLayout>

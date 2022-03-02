@@ -29,7 +29,7 @@ public class cuentaFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cambiar_key, container, false);
+        return inflater.inflate(R.layout.fragment_cuenta, container, false);
     }
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -69,11 +69,13 @@ public class cuentaFragment extends Fragment {
                 navController.navigate(R.id.action_menuPerfilFragment);
             }
         });
+
+
         nuevaCuenta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Toast.makeText(getContext(), "Nueva cuenta creada!", Toast.LENGTH_SHORT).show();
+
             }
         });
     }
