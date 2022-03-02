@@ -1,5 +1,7 @@
 package com.example.playstv;
 
+import static android.widget.Toast.LENGTH_SHORT;
+
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -11,7 +13,9 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 
 public class SubirVideoFragment extends Fragment {
@@ -21,6 +25,7 @@ public class SubirVideoFragment extends Fragment {
     ImageButton buttonPerfil;
     ImageButton buttonCamara;
     ImageButton volver;
+    Button subirVideo;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -39,6 +44,7 @@ public class SubirVideoFragment extends Fragment {
         buttonPerfil = view.findViewById(R.id.botonPerfil);
         buttonCamara = view.findViewById(R.id.botonCamara);
         volver = view.findViewById(R.id.logoVolver);
+        subirVideo = view.findViewById(R.id.buttonSubirVideo);
 
         buttonSuscripciones.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -72,6 +78,14 @@ public class SubirVideoFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.action_menuPrincipalFragment);
+            }
+        });
+
+        subirVideo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Toast.makeText(getContext(), "Video subido!", LENGTH_SHORT).show();
             }
         });
     }

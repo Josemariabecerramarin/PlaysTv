@@ -11,7 +11,9 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 
 public class CambiarImagenPerfilFragment extends Fragment {
@@ -21,6 +23,7 @@ public class CambiarImagenPerfilFragment extends Fragment {
     ImageButton buttonSuscripciones;
     ImageButton buttonPerfil;
     ImageButton buttonCamara;
+    Button cambiarImagen;
 
 
 
@@ -41,6 +44,7 @@ public class CambiarImagenPerfilFragment extends Fragment {
         buttonSuscripciones = view.findViewById(R.id.botonSuscripciones);
         buttonPerfil = view.findViewById(R.id.botonPerfil);
         buttonCamara = view.findViewById(R.id.botonCamara);
+        cambiarImagen = view.findViewById(R.id.buttonSubirImagen);
 
         buttonVolver.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +77,13 @@ public class CambiarImagenPerfilFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.action_menuCamaraFragment);
+            }
+        });
+        cambiarImagen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Toast.makeText(getContext(), "Imagen cambiada!", Toast.LENGTH_SHORT).show();
             }
         });
     }
