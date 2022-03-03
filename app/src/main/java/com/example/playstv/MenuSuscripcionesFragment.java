@@ -18,7 +18,6 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
 
-@SuppressLint("ResourceType")
 public class MenuSuscripcionesFragment extends Fragment {
     NavController navController;
     ImageButton volver;
