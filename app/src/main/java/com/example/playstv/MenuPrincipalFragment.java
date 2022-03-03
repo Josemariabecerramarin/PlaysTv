@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -30,6 +32,16 @@ public class MenuPrincipalFragment<ibLis> extends Fragment {
     FrameLayout redes;
     ImageButton compartir;
     boolean clicado = true;
+    ImageButton lupa;
+    ImageButton seguir;
+    ImageButton like;
+    ImageButton comentario;
+    ImageView insta;
+    ImageView facebook;
+    ImageView telegram;
+    ImageView wasap;
+    ImageView mail;
+    ImageView twitter;
 
 
     @Override
@@ -51,6 +63,16 @@ public class MenuPrincipalFragment<ibLis> extends Fragment {
         buttonCamara = view.findViewById(R.id.botonCamara);
         redes = view.findViewById(R.id.redes);
         compartir = view.findViewById(R.id.compartir);
+        lupa = view.findViewById(R.id.imageButton5);
+        seguir = view.findViewById(R.id.imageButton);
+        like = view.findViewById(R.id.imageView3);
+        comentario = view.findViewById(R.id.imageButton6);
+        insta = view.findViewById(R.id.imageView7);
+        facebook = view.findViewById(R.id.facebook);
+        telegram = view.findViewById(R.id.telegram);
+        wasap = view.findViewById(R.id.wasap);
+        mail = view.findViewById(R.id.mail2);
+        twitter = view.findViewById(R.id.twitter);
 
 
         redes.setVisibility(View.GONE);
@@ -85,6 +107,67 @@ public class MenuPrincipalFragment<ibLis> extends Fragment {
                     redes.setVisibility(View.GONE);
                     clicado = true;
                 }
+            }
+        });
+
+        lupa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "Las busquedas están deshabilitadas por el momento", Toast.LENGTH_SHORT).show();
+            }
+        });
+        seguir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "Ahora sigues a este usuario!", Toast.LENGTH_SHORT).show();
+            }
+        });
+        like.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "Tu like se ha sumado a la base de datos!", Toast.LENGTH_SHORT).show();
+            }
+        });
+        comentario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "Los comentarios están deshabilitados temporalmente", Toast.LENGTH_SHORT).show();
+            }
+        });
+        insta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "Has compartido el video!", Toast.LENGTH_SHORT).show();
+            }
+        });
+        facebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "Has compartido el video!", Toast.LENGTH_SHORT).show();
+            }
+        });
+        telegram.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "Has compartido el video!", Toast.LENGTH_SHORT).show();
+            }
+        });
+        wasap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "Has compartido el video!", Toast.LENGTH_SHORT).show();
+            }
+        });
+        mail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "Has compartido el video!", Toast.LENGTH_SHORT).show();
+            }
+        });
+        twitter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "Has compartido el video!", Toast.LENGTH_SHORT).show();
             }
         });
     }
