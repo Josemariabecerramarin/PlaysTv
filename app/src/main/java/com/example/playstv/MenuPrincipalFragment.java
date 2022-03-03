@@ -1,6 +1,9 @@
 package com.example.playstv;
 
+import android.content.Context;
 import android.content.Intent;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 
 import android.renderscript.ScriptGroup;
@@ -11,12 +14,15 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
+import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -42,6 +48,8 @@ public class MenuPrincipalFragment<ibLis> extends Fragment {
     ImageView wasap;
     ImageView mail;
     ImageView twitter;
+    LinearLayout siguiente;
+
 
 
     @Override
@@ -58,6 +66,8 @@ public class MenuPrincipalFragment<ibLis> extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         navController = Navigation.findNavController(view);
 
+        VideoView videoView = (VideoView) view.findViewById(R.id.videoView);
+        videoView.setVideoURI(Uri.parse("https://redirect.veoh.com/flash/p/2/v105713956nN9KkFTq/h105713956.mp4?ct=ed68d1590f9ee35f948b8fd9f00bf493f79fece93db46d27"));
         buttonSuscripciones = view.findViewById(R.id.botonSuscripciones);
         buttonPerfil = view.findViewById(R.id.botonPerfil);
         buttonCamara = view.findViewById(R.id.botonCamara);
@@ -73,6 +83,10 @@ public class MenuPrincipalFragment<ibLis> extends Fragment {
         wasap = view.findViewById(R.id.wasap);
         mail = view.findViewById(R.id.mail2);
         twitter = view.findViewById(R.id.twitter);
+        siguiente = view.findViewById(R.id.siguiente);
+        videoView.start();
+        /*MediaPlayer mediaPlayer = MediaPlayer.create(getContext(), R.raw.videoxokas4);
+        mediaPlayer.start();*/
 
 
         redes.setVisibility(View.GONE);
@@ -107,6 +121,12 @@ public class MenuPrincipalFragment<ibLis> extends Fragment {
                     redes.setVisibility(View.GONE);
                     clicado = true;
                 }
+            }
+        });
+        siguiente.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_principal2Fragment);
             }
         });
 
@@ -170,6 +190,7 @@ public class MenuPrincipalFragment<ibLis> extends Fragment {
                 Toast.makeText(getContext(), "Has compartido el video!", Toast.LENGTH_SHORT).show();
             }
         });
+
     }
 
 }

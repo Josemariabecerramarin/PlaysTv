@@ -18,7 +18,8 @@
         android:backgroundTint="#00FFFFFF"
         android:src="@drawable/lupa"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="20dp"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -27,7 +28,8 @@
         android:background="#0DFFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="20dp">
 
         <ImageButton
             android:id="@+id/botonPerfil"
@@ -62,23 +64,14 @@
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-    <ScrollView
-        android:layout_width="398dp"
-        android:layout_height="6dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="420dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 
     <LinearLayout
@@ -173,6 +166,18 @@
             android:translationY="50dp"/>
 
     </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/siguiente"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:elevation="50dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="horizontal">
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

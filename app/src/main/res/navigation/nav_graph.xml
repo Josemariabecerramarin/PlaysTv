@@ -28,8 +28,6 @@
         android:name="com.example.playstv.MenuPrincipalFragment"
         android:label="fragment_menu_principal"
         tools:layout="@layout/fragment_menu_principal" >
-
-
     </fragment>
     <action
         android:id="@+id/action_Inicio_SesionFragment"
@@ -301,4 +299,20 @@
         app:destination="@id/suscripcionFragment"
         app:popEnterAnim="@android:anim/fade_in"
         app:popExitAnim="@android:anim/fade_out"/>
+    <fragment
+        android:id="@+id/principal2Fragment"
+        android:name="com.example.playstv.principal2Fragment"
+        android:label="fragment_principal2"
+        tools:layout="@layout/fragment_principal2" />
+    <action
+        android:id="@+id/action_principal2Fragment"
+        app:destination="@id/principal2Fragment" />
+    <fragment
+        android:id="@+id/principal3Fragment"
+        android:name="com.example.playstv.principal3Fragment"
+        android:label="fragment_principal3"
+        tools:layout="@layout/fragment_principal3" />
+    <action
+        android:id="@+id/action_principal3Fragment"
+        app:destination="@id/principal3Fragment" />
 </navigation>

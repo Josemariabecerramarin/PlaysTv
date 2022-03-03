@@ -2,6 +2,7 @@ package com.example.playstv;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;
+import android.graphics.Matrix;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,9 +13,12 @@ import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
+import android.view.ScaleGestureDetector;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 
@@ -27,12 +31,18 @@ public class MenuSuscripcionesFragment extends Fragment {
     ImageButton perfil;
     ImageButton camara;
     ImageButton botonsus;
+    ImageView imageView;
+
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_menu_suscripciones, container, false);
+
+
     }
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -46,6 +56,8 @@ public class MenuSuscripcionesFragment extends Fragment {
         botonsus = view.findViewById(R.id.botonSuscripciones);
         perfil = view.findViewById(R.id.botonPerfil);
         camara = view.findViewById(R.id.botonCamara);
+        imageView = view.findViewById(R.id.imageView5);
+
 
         volver.setOnClickListener(new View.OnClickListener() {
             @Override
