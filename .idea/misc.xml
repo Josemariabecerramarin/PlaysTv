@@ -20,7 +20,7 @@
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_menu_camara.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_menu_perfil.xml" value="0.22" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_menu_principal.xml" value="0.14" />
-        <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_menu_suscripciones.xml" value="0.1" />
+        <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_menu_suscripciones.xml" value="0.25" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_menu_ver_historial.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_opciones.xml" value="0.14733542319749215" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_registrarse.xml" value="0.12314814814814815" />
@@ -36,7 +36,7 @@
         <entry key="app/src/main/res/layout/fragment_cambiar_key.xml" value="0.19791666666666666" />
         <entry key="app/src/main/res/layout/fragment_canal.xml" value="0.15185185185185185" />
         <entry key="app/src/main/res/layout/fragment_consultar_subs.xml" value="0.33061594202898553" />
-        <entry key="app/src/main/res/layout/fragment_cuenta.xml" value="0.19217081850533807" />
+        <entry key="app/src/main/res/layout/fragment_cuenta.xml" value="0.259963768115942" />
         <entry key="app/src/main/res/layout/fragment_iniciar_cerrar.xml" value="0.33061594202898553" />
         <entry key="app/src/main/res/layout/fragment_inicio_sesion.xml" value="0.31478770131771594" />
         <entry key="app/src/main/res/layout/fragment_menu_ajustes.xml" value="0.24619640387275243" />

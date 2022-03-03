@@ -48,7 +48,8 @@
         android:id="@+id/menuSuscripcionesFragment"
         android:name="com.example.playstv.MenuSuscripcionesFragment"
         android:label="fragment_menu_suscripciones"
-        tools:layout="@layout/fragment_menu_suscripciones" />
+        tools:layout="@layout/fragment_menu_suscripciones" >
+    </fragment>
     <action
         android:id="@+id/action_menuSuscripcionesFragment"
         app:destination="@id/menuSuscripcionesFragment"
@@ -288,6 +289,16 @@
         app:destination="@id/emitirDirectoFragment"
         app:enterAnim="@android:anim/fade_in"
         app:exitAnim="@android:anim/fade_out"
+        app:popEnterAnim="@android:anim/fade_in"
+        app:popExitAnim="@android:anim/fade_out"/>
+    <fragment
+        android:id="@+id/suscripcionFragment"
+        android:name="com.example.playstv.suscripcionFragment"
+        android:label="fragment_suscripcion"
+        tools:layout="@layout/fragment_suscripcion" />
+    <action
+        android:id="@+id/action_suscripcionFragment"
+        app:destination="@id/suscripcionFragment"
         app:popEnterAnim="@android:anim/fade_in"
         app:popExitAnim="@android:anim/fade_out"/>
 </navigation>
