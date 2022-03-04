@@ -84,21 +84,18 @@ public class principal3Fragment extends Fragment {
         buttonSuscripciones.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                /*navController.navigate(R.id.action_menuSuscripcionesFragment);*/
                 NavHostFragment.findNavController(principal3Fragment.this).navigate(R.id.action_menuSuscripcionesFragment);
             }
         });
         anterior.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*navController.navigate(R.id.action_principal2Fragment);*/
                 NavHostFragment.findNavController(principal3Fragment.this).navigate(R.id.action_principal2Fragment);
             }
         });
         buttonPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*navController.navigate(R.id.action_opcionesFragment);*/
                 NavHostFragment.findNavController(principal3Fragment.this).navigate(R.id.action_opcionesFragment);
             }
         });
@@ -106,7 +103,6 @@ public class principal3Fragment extends Fragment {
         buttonCamara.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*navController.navigate(R.id.action_menuCamaraFragment);*/
                 NavHostFragment.findNavController(principal3Fragment.this).navigate(R.id.action_menuCamaraFragment);
             }
         });

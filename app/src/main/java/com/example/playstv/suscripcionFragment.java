@@ -46,7 +46,7 @@ public class suscripcionFragment extends Fragment {
         volver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_menuPrincipalFragment);
+                navController.navigate(R.id.action_SwipeFragment);
             }
         });
         seguir.setOnClickListener(new View.OnClickListener() {

@@ -84,21 +84,18 @@ public class principal2Fragment extends Fragment {
         buttonSuscripciones.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                /*navController.navigate(R.id.action_menuSuscripcionesFragment);*/
                 NavHostFragment.findNavController(principal2Fragment.this).navigate(R.id.action_menuSuscripcionesFragment);
             }
         });
         anterior.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*navController.navigate(R.id.action_menuPrincipalFragment);*/
                 NavHostFragment.findNavController(principal2Fragment.this).navigate(R.id.action_menuPrincipalFragment);
             }
         });
         siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*navController.navigate(R.id.principal3Fragment);*/
                 NavHostFragment.findNavController(principal2Fragment.this).navigate(R.id.principal3Fragment);
             }
         });
@@ -106,7 +103,6 @@ public class principal2Fragment extends Fragment {
         buttonPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*navController.navigate(R.id.action_opcionesFragment);*/
                 NavHostFragment.findNavController(principal2Fragment.this).navigate(R.id.action_opcionesFragment);
             }
         });
@@ -114,7 +110,6 @@ public class principal2Fragment extends Fragment {
         buttonCamara.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               /* navController.navigate(R.id.action_menuCamaraFragment);*/
                 NavHostFragment.findNavController(principal2Fragment.this).navigate(R.id.action_menuCamaraFragment);
             }
         });
@@ -134,7 +129,6 @@ public class principal2Fragment extends Fragment {
         lupa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /* Toast.makeText(getContext(), "Las busquedas están deshabilitadas por el momento", Toast.LENGTH_SHORT).show();*/
 
                 DynamicToast.makeSuccess(getContext(), "Las busquedas están deshabilitadas por el momento").show();
             }
@@ -142,63 +136,54 @@ public class principal2Fragment extends Fragment {
         seguir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Toast.makeText(getContext(), "Ahora sigues a este usuario!", Toast.LENGTH_SHORT).show();*/
                 DynamicToast.makeSuccess(getContext(), "Ahora sigues a este usuario").show();
             }
         });
         like.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Toast.makeText(getContext(), "Tu like se ha sumado a la base de datos!", Toast.LENGTH_SHORT).show();*/
                 DynamicToast.makeSuccess(getContext(), "Tu like se ha sumado a la base de datos").show();
             }
         });
         comentario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Toast.makeText(getContext(), "Los comentarios están deshabilitados temporalmente", Toast.LENGTH_SHORT).show();*/
                 DynamicToast.makeSuccess(getContext(), "Los comentarios están deshabilitados temporalmente").show();
             }
         });
         insta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Toast.makeText(getContext(), "Has compartido el video!", Toast.LENGTH_SHORT).show();*/
                 DynamicToast.makeSuccess(getContext(), "Has compartido el video!").show();
             }
         });
         facebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Toast.makeText(getContext(), "Has compartido el video!", Toast.LENGTH_SHORT).show();*/
                 DynamicToast.makeSuccess(getContext(), "Has compartido el video!").show();
             }
         });
         telegram.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Toast.makeText(getContext(), "Has compartido el video!", Toast.LENGTH_SHORT).show();*/
                 DynamicToast.makeSuccess(getContext(), "Has compartido el video!").show();
             }
         });
         wasap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Toast.makeText(getContext(), "Has compartido el video!", Toast.LENGTH_SHORT).show();*/
                 DynamicToast.makeSuccess(getContext(), "Has compartido el video!").show();
             }
         });
         mail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Toast.makeText(getContext(), "Has compartido el video!", Toast.LENGTH_SHORT).show();*/
                 DynamicToast.makeSuccess(getContext(), "Has compartido el video!").show();
             }
         });
         twitter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*Toast.makeText(getContext(), "Has compartido el video!", Toast.LENGTH_SHORT).show();*/
                 DynamicToast.makeSuccess(getContext(), "Las busquedas están deshabilitadas por el momento").show();
             }
         });

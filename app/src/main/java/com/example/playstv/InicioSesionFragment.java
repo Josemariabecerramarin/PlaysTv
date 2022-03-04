@@ -52,7 +52,7 @@ public class InicioSesionFragment extends Fragment {
                     @Override
                     public void run() {
                         // lo que passa despues de x tiempo
-                        navController.navigate(R.id.action_rataFragment);
+                        navController.navigate(R.id.action_SwipeFragment);
 
                     }
                 }, 3500);  // el tiempo en milisegundos

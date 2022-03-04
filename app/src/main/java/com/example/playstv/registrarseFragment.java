@@ -34,7 +34,7 @@ public class registrarseFragment extends Fragment {
         buttonRegistrado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_rataFragment);
+                navController.navigate(R.id.action_SwipeFragment);
             }
         });
     }
