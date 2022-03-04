@@ -12,6 +12,7 @@
     android:layout_height="match_parent"
     android:background="#011900">
 
+
     <ImageButton
         android:id="@+id/logoVolver"
         android:layout_width="wrap_content"

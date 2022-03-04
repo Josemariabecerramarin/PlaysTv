@@ -324,6 +324,9 @@
         app:exitAnim="@android:anim/slide_out_right"
         app:popEnterAnim="@android:anim/slide_in_left"
         app:popExitAnim="@android:anim/slide_out_right"/>
+    <action
+        android:id="@+id/action_rataFragment"
+        app:destination="@id/rataFragment"/>
     <fragment
         android:id="@+id/comentariosFragment"
         android:name="com.example.playstv.comentariosFragment"
@@ -336,4 +339,9 @@
         app:exitAnim="@android:anim/fade_out"
         app:popEnterAnim="@android:anim/fade_in"
         app:popExitAnim="@android:anim/fade_out"/>
+    <fragment
+        android:id="@+id/rataFragment"
+        android:name="com.example.playstv.rataFragment"
+        android:label="fragment_rata"
+        tools:layout="@layout/fragment_rata" />
 </navigation>

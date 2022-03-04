@@ -38,7 +38,6 @@ public class InicioSesionFragment extends Fragment {
 
         buttonIniciar = view.findViewById(R.id.buttonIniciar);
 
-
         buttonIniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -53,7 +52,7 @@ public class InicioSesionFragment extends Fragment {
                     @Override
                     public void run() {
                         // lo que passa despues de x tiempo
-                        navController.navigate(R.id.action_menuPrincipalFragment);
+                        navController.navigate(R.id.action_rataFragment);
 
                     }
                 }, 3500);  // el tiempo en milisegundos
