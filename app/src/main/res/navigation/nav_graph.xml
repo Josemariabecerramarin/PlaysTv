@@ -293,7 +293,8 @@
         android:id="@+id/suscripcionFragment"
         android:name="com.example.playstv.suscripcionFragment"
         android:label="fragment_suscripcion"
-        tools:layout="@layout/fragment_suscripcion" />
+        tools:layout="@layout/fragment_suscripcion" >
+    </fragment>
     <action
         android:id="@+id/action_suscripcionFragment"
         app:destination="@id/suscripcionFragment"
@@ -315,4 +316,12 @@
     <action
         android:id="@+id/action_principal3Fragment"
         app:destination="@id/principal3Fragment" />
+    <fragment
+        android:id="@+id/comentariosFragment"
+        android:name="com.example.playstv.comentariosFragment"
+        android:label="fragment_comentarios"
+        tools:layout="@layout/fragment_comentarios" />
+    <action
+        android:id="@+id/action_comentariosFragment"
+        app:destination="@id/comentariosFragment" />
 </navigation>

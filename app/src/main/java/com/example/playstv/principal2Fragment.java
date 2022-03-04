@@ -70,7 +70,7 @@ public class principal2Fragment extends Fragment {
         mail = view.findViewById(R.id.mail2);
         twitter = view.findViewById(R.id.twitter);
         anterior = view.findViewById(R.id.anterior);
-        siguiente = view.findViewById(R.id.siguiente);
+        siguiente = view.findViewById(R.id.siguiente2);
         videoView.start();
         /*MediaPlayer mediaPlayer = MediaPlayer.create(getContext(), R.raw.videoxokas4);
         mediaPlayer.start();*/

@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:text="Pronto estará disponible esta opción"
             android:textColor="@color/white"
-            android:textSize="20dp"
+            android:textSize="20sp"
             app:layout_constraintTop_toBottomOf="@id/logoVolver"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"

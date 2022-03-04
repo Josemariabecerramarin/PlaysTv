@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".comentariosFragment">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#011900">
+
+
+    <ImageButton
+        android:id="@+id/logoVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/logo2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageButton
+        android:id="@+id/botonFlecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@drawable/flecha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/primero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="71dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/logoVolver"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/comentario2"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aylen Tejas"
+            android:textColor="@color/white"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estos videos son god!"
+            android:textColor="@color/white"
+            android:translationY="25dp"
+            android:translationX="-70dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/segundo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="71dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/primero"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/comentario3"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elton Tito"
+            android:textColor="@color/white"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="demasiado bueno, xokas un grande!!!"
+            android:textColor="@color/white"
+            android:translationY="25dp"
+            android:translationX="-60dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tercero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="71dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/segundo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/comentario4"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elton Tito"
+            android:textColor="@color/white"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Totitooo!!! xD"
+            android:textColor="@color/white"
+            android:translationY="25dp"
+            android:translationX="-60dp"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

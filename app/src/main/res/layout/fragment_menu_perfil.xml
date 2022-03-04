@@ -43,7 +43,7 @@
             android:layout_height="35dp"
             android:text="Cambiar imagen de perfil"
             android:textColor="@color/white"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:translationX="75dp"
             android:translationY="-39dp" />
     </LinearLayout>
@@ -72,7 +72,7 @@
             android:textColor="@color/white"
             android:translationY="-39dp"
             android:translationX="75dp"
-            android:textSize="18dp"/>
+            android:textSize="18sp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -99,7 +99,7 @@
             android:textColor="@color/white"
             android:translationY="-39dp"
             android:translationX="75dp"
-            android:textSize="18dp"/>
+            android:textSize="18sp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -126,7 +126,7 @@
             android:textColor="@color/white"
             android:translationY="-39dp"
             android:translationX="75dp"
-            android:textSize="18dp"/>
+            android:textSize="18sp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -153,7 +153,7 @@
             android:textColor="@color/white"
             android:translationY="-39dp"
             android:translationX="75dp"
-            android:textSize="18dp"/>
+            android:textSize="18sp"/>
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

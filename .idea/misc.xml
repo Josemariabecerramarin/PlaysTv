@@ -3,12 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/activity_main.xml" value="0.28940217391304346" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_ayuda_consejo.xml" value="0.1" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_buzon_sugerencias.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_cambiar_apodo.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_cambiar_imagen_perfil.xml" value="0.25" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_cambiar_key.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_canal.xml" value="0.1" />
+        <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_comentarios.xml" value="0.28940217391304346" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_consultar_subs.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_control_parental.xml" value="0.1" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_cuenta.xml" value="0.17831813576494426" />
@@ -23,8 +25,12 @@
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_menu_suscripciones.xml" value="0.25" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_menu_ver_historial.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_opciones.xml" value="0.14733542319749215" />
+        <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_principal2.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_principal3.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_redes.xml" value="0.28940217391304346" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_registrarse.xml" value="0.12314814814814815" />
         <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_subir_video.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/jbm19/AndroidStudioProjects/PlaysTv/app/src/main/res/layout/fragment_suscripcion.xml" value="0.28940217391304346" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19791666666666666" />
         <entry key="app/src/main/res/layout/egistrarsefragment.xml" value="0.3138586956521739" />
         <entry key="app/src/main/res/layout/fragment_anadir_cuenta.xml" value="0.13984168865435356" />

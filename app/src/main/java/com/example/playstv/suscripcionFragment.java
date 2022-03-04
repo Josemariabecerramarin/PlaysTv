@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -22,6 +23,8 @@ public class suscripcionFragment extends Fragment {
     ImageButton volver;
     ImageView seguir;
     ImageView campana;
+    ImageButton flecha;
+    TextView verComentarios;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -37,6 +40,8 @@ public class suscripcionFragment extends Fragment {
         volver = view.findViewById(R.id.logoVolver);
         seguir = view.findViewById(R.id.seguir);
         campana = view.findViewById(R.id.campana);
+        flecha = view.findViewById(R.id.botonFlecha);
+        verComentarios = view.findViewById(R.id.verComentarios);
 
         volver.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +59,19 @@ public class suscripcionFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getContext(), "Notificaciones activadas!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        flecha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.action_menuSuscripcionesFragment);
+            }
+        });
+        verComentarios.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.comentariosFragment);
             }
         });
     }

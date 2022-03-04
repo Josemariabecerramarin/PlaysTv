@@ -59,7 +59,7 @@
                 android:layout_height="35dp"
                 android:text="Mostrar historial"
                 android:textColor="@color/white"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:translationX="75dp"
                 android:translationY="-39dp" />
         </LinearLayout>
@@ -87,7 +87,7 @@
                 android:layout_height="35dp"
                 android:text="Control parental"
                 android:textColor="@color/white"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:translationX="75dp"
                 android:translationY="-39dp" />
 
@@ -124,7 +124,7 @@
                 android:layout_height="35dp"
                 android:text="Cambiar idioma"
                 android:textColor="@color/white"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:translationX="75dp"
                 android:translationY="-39dp" />
 
