@@ -24,6 +24,8 @@ public class CambiarImagenPerfilFragment extends Fragment {
     ImageButton buttonPerfil;
     ImageButton buttonCamara;
     Button cambiarImagen;
+    ImageButton foto;
+    boolean cambio = false;
 
 
 
@@ -45,6 +47,7 @@ public class CambiarImagenPerfilFragment extends Fragment {
         buttonPerfil = view.findViewById(R.id.botonPerfil);
         buttonCamara = view.findViewById(R.id.botonCamara);
         cambiarImagen = view.findViewById(R.id.buttonSubirImagen);
+        foto = view.findViewById(R.id.foto);
 
         buttonVolver.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,5 +89,20 @@ public class CambiarImagenPerfilFragment extends Fragment {
                 Toast.makeText(getContext(), "Imagen cambiada!", Toast.LENGTH_SHORT).show();
             }
         });
+
+        foto.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                if (!cambio){
+                    foto.setImageResource(R.drawable.perfilgrande);
+                    cambio = true;
+                }else{
+                    foto.setImageResource(R.drawable.cambiarimagenperfil);
+                    cambio = false;
+                }
+                return false;
+            }
+        });
+
     }
 }

@@ -307,7 +307,11 @@
         tools:layout="@layout/fragment_principal2" />
     <action
         android:id="@+id/action_principal2Fragment"
-        app:destination="@id/principal2Fragment" />
+        app:destination="@id/principal2Fragment"
+        app:enterAnim="@android:anim/slide_in_left"
+        app:exitAnim="@android:anim/slide_out_right"
+        app:popEnterAnim="@android:anim/slide_in_left"
+        app:popExitAnim="@android:anim/slide_out_right"/>
     <fragment
         android:id="@+id/principal3Fragment"
         android:name="com.example.playstv.principal3Fragment"
@@ -315,7 +319,11 @@
         tools:layout="@layout/fragment_principal3" />
     <action
         android:id="@+id/action_principal3Fragment"
-        app:destination="@id/principal3Fragment" />
+        app:destination="@id/principal3Fragment"
+        app:enterAnim="@android:anim/slide_in_left"
+        app:exitAnim="@android:anim/slide_out_right"
+        app:popEnterAnim="@android:anim/slide_in_left"
+        app:popExitAnim="@android:anim/slide_out_right"/>
     <fragment
         android:id="@+id/comentariosFragment"
         android:name="com.example.playstv.comentariosFragment"
@@ -323,5 +331,9 @@
         tools:layout="@layout/fragment_comentarios" />
     <action
         android:id="@+id/action_comentariosFragment"
-        app:destination="@id/comentariosFragment" />
+        app:destination="@id/comentariosFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:exitAnim="@android:anim/fade_out"
+        app:popEnterAnim="@android:anim/fade_in"
+        app:popExitAnim="@android:anim/fade_out"/>
 </navigation>

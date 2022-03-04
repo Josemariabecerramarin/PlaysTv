@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".suscripcionFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#011900">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="#011900">
 
     <ImageButton
@@ -127,11 +131,13 @@
             android:textColor="@color/white"
             android:translationY="20dp"
             android:translationX="-123dp"/>
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="356.577 reproducciones"
-            android:textColor="@color/white"/>
+            android:layout_width="170dp"
+            android:layout_height="15dp"
+            android:text="356.577 visualizaciones"
+            android:textColor="@color/white"
+            android:translationX="-20dp" />
 
         <TextView
             android:id="@+id/verComentarios"
@@ -139,10 +145,11 @@
             android:layout_height="wrap_content"
             android:text="Ver comentarios"
             android:textColor="@color/white"
-            android:translationX="-150dp"
+            android:translationX="-190dp"
             android:translationY="20dp"/>
 
 
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
